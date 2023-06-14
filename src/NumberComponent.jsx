@@ -18,7 +18,7 @@ export const NumberComponent = () => {
     }
     const loadFromLocalStorage = () => {
         const storedNumber = localStorage.getItem("storedNumber")
-        setFetchedNumber(storedNumber)
+        setFetchedNumber(JSON.parse(storedNumber))
         
     }
     return (
